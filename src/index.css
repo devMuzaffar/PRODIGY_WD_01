@@ -1,0 +1,275 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #ca4361;
+  --gray: rgba(151, 151, 151, 65);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.links {
+  box-sizing: border-box;
+  list-style-type: none;
+  display: flex;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 10px;
+  transition: all;
+  transition-duration: 0.3s;
+}
+
+.links a:hover {
+  color: var(--primary-color);
+}
+
+.buttons button {
+  font-size: 20px;
+  margin-left: 10px;
+  border-radius: 6px;
+  height: 51px;
+  width: 145px;
+  cursor: pointer;
+  transition: all;
+  transition-duration: 0.3s;
+}
+
+.filled {
+  background-color: var(--primary-color);
+  color: white;
+  border: 1px solid transparent;
+}
+
+.filled:hover {
+  background-color: white;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.outlined {
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.outlined:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.line {
+  width: 32px;
+  border: 2px solid var(--primary-color);
+  margin: 10px auto;
+  border-radius: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding-top: 60px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease;
+}
+
+nav.scroll {
+  background: var(--primary-color);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+nav.scroll .links a {
+  color: white;
+}
+
+nav.scroll .line {
+  border: 2px solid white;
+}
+
+nav.scroll .filled {
+  background: white;
+  color: var(--primary-color);
+}
+
+nav.scroll button {
+  background: var(--primary-color);
+  color: white;
+}
+
+main {
+  /* padding: 30px 0; */
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.hero h1 {
+  font-size: 55px;
+  font-weight: 600;
+  width: 446px;
+  margin-right: 50px;
+}
+
+.hero span {
+  color: var(--primary-color);
+}
+
+.hero p {
+  font-size: 21px;
+  color: var(--gray);
+  width: 370px;
+  margin-top: 22px;
+}
+
+.hero .cta {
+  width: 270px;
+  height: 65px;
+  background-color: var(--primary-color);
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-size: 21px;
+  margin-top: 40px;
+  transition: all;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.cta:hover {
+  color: var(--primary-color);
+  background-color: white;
+  border-color: var(--primary-color);
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+/* Responsive Codes */
+
+/* For Tablets */
+@media (max-width: 1250px) {
+  .illustration {
+    display: none;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero h1,
+  p {
+    margin-right: 0;
+  }
+
+  .hero h1 {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 40px;
+  }
+
+  .hero p {
+    margin: 22px auto;
+    margin-bottom: 0;
+    width: 70%;
+    font-size: 18px;
+  }
+
+  .cta {
+    font-size: 18px !important;
+    width: 216px !important;
+    height: 52px !important;
+  }
+}
+
+/* For Mobile Screens */
+
+@media (max-width: 800px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+
+  .menu-icon {
+    cursor: pointer;
+    transition: linear;
+  }
+
+  .menu {
+    height: 100vh;
+    width: 280px;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+  }
+
+  .close-icon {
+    margin-top: 40px;
+    cursor: pointer;
+  }
+
+  .menu .divider {
+    border: 1px solid var(--gray);
+    margin: 40px 0;
+  }
+
+  .menu button {
+    width: 100%;
+    margin: 5px 0;
+    font-size: 18px;
+  }
+
+  .menu ul {
+    margin-top: 40px;
+    text-align: center;
+    display: block;
+  }
+
+  .menu ul li {
+    margin-top: 50px;
+  }
+
+  .menu li a {
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .visible {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
