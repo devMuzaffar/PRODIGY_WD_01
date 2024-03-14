@@ -8,6 +8,7 @@
 - Vite
 
 # Live Site
-- 
+- https://prodigywd01.netlify.app/
 
 # Screenshot
+![download](https://github.com/devMuzaffar/PRODIGY_WD_01/assets/4027728/48eb9d72-b461-4351-9a4b-ec935787b028)
