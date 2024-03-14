@@ -24,14 +24,14 @@ const Header = () => {
       <nav class={`desktop-nav ${scrolled && "scroll"}`}>
         <ul class="links">
           <li>
-            <a href="#">About me</a>
+            <a href="#about">About me</a>
             <div class="line"></div>
           </li>
           <li>
-            <a href="">Services</a>
+            <a href="#services">Services</a>
           </li>
           <li>
-            <a href="">Company</a>
+            <a href="#company">Company</a>
           </li>
         </ul>
 
@@ -125,13 +125,13 @@ const Header = () => {
 
         <ul class="links">
           <li>
-            <a href="#">About me</a>
+            <a href="#about">About me</a>
           </li>
           <li>
-            <a href="#">Services</a>
+            <a href="#services">Services</a>
           </li>
           <li>
-            <a href="#">Company</a>
+            <a href="#company">Company</a>
           </li>
         </ul>
       </div>
